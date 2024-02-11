@@ -15,5 +15,9 @@ public class Showtime {
 	private int Showtimeid;
 	private LocalTime Starttime;
 	private LocalTime Endtime;
+	public void setSId(int sId) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

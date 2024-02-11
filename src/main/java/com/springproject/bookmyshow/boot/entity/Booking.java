@@ -23,4 +23,9 @@ public class Booking {
 
 	}
 
+	public void setBId(int bId) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

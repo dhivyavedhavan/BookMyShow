@@ -20,5 +20,10 @@ public class Admin {
 	private String adminname;
 	private String adminmail;
 	private String adminpassword;
+	
+	public static void setAdminId(int adminId2) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

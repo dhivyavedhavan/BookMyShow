@@ -15,5 +15,9 @@ public class Theater {
 	private String Theartername;
 	private String location;
 	private double Capacity;
+	public void setTId(int tid) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
