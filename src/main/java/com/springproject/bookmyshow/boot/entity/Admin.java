@@ -1,5 +1,8 @@
 package com.springproject.bookmyshow.boot.entity;
 
+import javax.persistence.CascadeType;
+import javax.persistence.OneToMany;
+
 import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Entity;
@@ -20,6 +23,9 @@ public class Admin {
 	private String adminname;
 	private String adminmail;
 	private String adminpassword;
+	
+	@OneToMany(cascade = CascadeType.ALL)
+	private Admin auser;
 	
 	public static void setAdminId(int adminId2) {
 		// TODO Auto-generated method stub

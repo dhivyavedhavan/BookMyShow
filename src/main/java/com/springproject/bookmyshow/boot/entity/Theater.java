@@ -1,5 +1,8 @@
 package com.springproject.bookmyshow.boot.entity;
 
+import javax.persistence.CascadeType;
+import javax.persistence.OneToMany;
+
 import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Entity;
@@ -15,9 +18,14 @@ public class Theater {
 	private String Theartername;
 	private String location;
 	private double Capacity;
+	
+	@OneToMany(cascade = CascadeType.ALL)
+	private Showtime tShowtime;
+	
 	public void setTId(int tid) {
 		// TODO Auto-generated method stub
 		
 	}
+	
 
 }

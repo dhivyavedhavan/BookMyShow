@@ -2,6 +2,9 @@ package com.springproject.bookmyshow.boot.entity;
 
 import java.time.LocalDate;
 
+import javax.persistence.CascadeType;
+import javax.persistence.OneToMany;
+
 import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Entity;
@@ -19,7 +22,8 @@ public class Booking {
 		private double Bookingprice;
 		private LocalDate bookingDate;
 		
-		
+		@OneToMany(cascade = CascadeType.ALL)
+		private Ticket bTicket;
 
 	}
 

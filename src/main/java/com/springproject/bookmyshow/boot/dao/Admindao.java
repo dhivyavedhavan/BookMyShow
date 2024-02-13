@@ -38,4 +38,8 @@ public class Admindao {
 		}
 		return null;
 	}
+	public Admin saveStudent(Admin admin) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

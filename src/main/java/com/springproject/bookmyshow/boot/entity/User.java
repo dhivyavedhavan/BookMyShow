@@ -1,5 +1,8 @@
 package com.springproject.bookmyshow.boot.entity;
 
+import javax.persistence.CascadeType;
+import javax.persistence.OneToMany;
+
 import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Entity;
@@ -21,6 +24,10 @@ public class User {
 	private String Usermail;
 	private String Userpassword;
 	private long UserContact;
+	
+	@OneToMany(cascade = CascadeType.ALL)
+	private Booking ubooking;
+	
 
 
 }

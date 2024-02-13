@@ -2,6 +2,9 @@ package com.springproject.bookmyshow.boot.entity;
 
 import java.time.LocalTime;
 
+import javax.persistence.CascadeType;
+import javax.persistence.OneToMany;
+
 import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Entity;
@@ -17,5 +20,8 @@ public class Movie {
 	private String Moviegenre;
 	private LocalTime movieduration;
 	private int Rating;
+	
+	@OneToMany(cascade = CascadeType.ALL)
+	private Showtime mShowtime;
 
 }
