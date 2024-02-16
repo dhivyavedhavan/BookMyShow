@@ -14,7 +14,7 @@ public class Theaterdao {
 	@Autowired
 	Theaterrepo theaterRepo;
 	
-	public Theaterrepo  saveTheatre(Theaterrepo theatre)
+	public Theaterrepo saveTheater(Theaterrepo theatre)
 	{
 		return theaterRepo.save(theatre);
 	}
@@ -52,6 +52,11 @@ public class Theaterdao {
 	{
 		List<Theater> theatre=theaterRepo.findAll();
 		return theatre;
+	}
+
+	public Theater saveTheater(Theater theatre) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
