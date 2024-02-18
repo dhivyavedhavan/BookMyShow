@@ -6,6 +6,8 @@ import javax.persistence.OneToMany;
 import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Entity;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,7 +17,11 @@ import lombok.Setter;
 @Setter
 public class Theater {
 	private int Thearterid;
+	@NotNull(message = "name can't be not null")
+	@NotBlank(message = "name can't be not blank")
 	private String Theartername;
+	@NotNull(message = "name can't be not null")
+	@NotBlank(message = "name can't be not blank")
 	private String location;
 	private double Capacity;
 	

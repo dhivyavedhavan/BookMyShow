@@ -55,6 +55,12 @@ public class Userdao {
 		List<User> user=uRepo.findAll();
 		return user;
 	}
+
+
+	public User userLogin(String uEmail, String uPassword) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }
 
